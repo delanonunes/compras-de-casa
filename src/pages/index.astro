@@ -2,50 +2,50 @@
 const produtos = [
   {
     rank: 1,
-    nome: "Furadeira e Parafusadeira Bosch",
+    nome: "Creatina Monohidratada Growth",
     subtitulo: "Melhor escolha no geral",
-    imagem: "https://m.media-amazon.com/images/I/61XU95EJ-NL._AC_SX679_.jpg",
-    link: "https://www.amazon.com.br/dp/B07CV3SDPY?tag=comprasdecasa02-20",
-    resumo: "Boa combinação entre potência, confiabilidade e praticidade para uso doméstico.",
+    imagem: "https://m.media-amazon.com/images/I/61h0QXGQZlL._AC_SX679_.jpg",
+    link: "https://www.amazon.com.br/s?k=creatina+growth&tag=comprasdecasa02-20",
+    resumo: "Alta pureza e excelente custo-benefício, sendo uma das mais populares do Brasil.",
     pros: [
-      "Marca forte e confiável",
-      "Boa para reparos do dia a dia",
-      "Ótimo equilíbrio entre qualidade e preço"
+      "Ótima absorção",
+      "Alta pureza",
+      "Preço competitivo"
     ],
     contras: [
-      "Pode não ser ideal para uso profissional pesado"
+      "Pode esgotar com frequência"
     ]
   },
   {
     rank: 2,
-    nome: "Parafusadeira e Furadeira WAP",
+    nome: "Creatina Max Titanium",
     subtitulo: "Boa alternativa custo-benefício",
-    imagem: "https://m.media-amazon.com/images/I/51k6vxRPzBL._AC_SX679_.jpg",
-    link: "https://www.amazon.com.br/dp/B098PHPHHZ?tag=comprasdecasa02-20",
-    resumo: "Modelo interessante para quem quer economizar sem abrir mão da utilidade básica.",
+    imagem: "https://m.media-amazon.com/images/I/71pVvZpJ3SL._AC_SX679_.jpg",
+    link: "https://www.amazon.com.br/s?k=creatina+max+titanium&tag=comprasdecasa02-20",
+    resumo: "Marca consolidada no mercado fitness, com boa qualidade e fácil acesso.",
     pros: [
-      "Preço competitivo",
-      "Boa para tarefas leves",
-      "Fácil de usar"
+      "Marca conhecida",
+      "Boa qualidade",
+      "Fácil de encontrar"
     ],
     contras: [
-      "Acabamento mais simples"
+      "Preço pode variar"
     ]
   },
   {
     rank: 3,
-    nome: "Furadeira e Parafusadeira Black+Decker",
-    subtitulo: "Boa opção para uso doméstico",
-    imagem: "https://m.media-amazon.com/images/I/61qyEemk7nL._AC_SX679_.jpg",
-    link: "https://www.amazon.com.br/dp/B00HF1JQHK?tag=comprasdecasa02-20",
-    resumo: "Uma opção prática para quem busca uma marca conhecida e uso ocasional em casa.",
+    nome: "Creatina Integralmedica",
+    subtitulo: "Boa opção para iniciantes",
+    imagem: "https://m.media-amazon.com/images/I/61GvX7QjX9L._AC_SX679_.jpg",
+    link: "https://www.amazon.com.br/s?k=creatina+integralmedica&tag=comprasdecasa02-20",
+    resumo: "Boa escolha para quem está começando e quer um produto confiável.",
     pros: [
-      "Marca conhecida",
-      "Boa ergonomia",
-      "Funciona bem em tarefas comuns"
+      "Marca confiável",
+      "Boa para iniciantes",
+      "Qualidade consistente"
     ],
     contras: [
-      "Preço pode oscilar bastante"
+      "Não é a mais barata"
     ]
   }
 ];
@@ -55,11 +55,14 @@ const produtos = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>As 5 Melhores Furadeiras e Parafusadeiras em 2026</title>
+
+    <title>As 3 Melhores Creatinas em 2026</title>
+
     <meta
       name="description"
-      content="Veja as melhores furadeiras e parafusadeiras em 2026, com comparativo, vantagens, desvantagens e links para compra."
+      content="Veja as melhores creatinas em 2026 para ganho de força, massa muscular e desempenho. Comparativo completo com links para compra."
     />
+
     <style>
       :root {
         --bg: #f7f7f7;
@@ -71,11 +74,7 @@ const produtos = [
         --primary-dark: #115e59;
         --highlight: #ecfeff;
       }
-
-      * {
-        box-sizing: border-box;
-      }
-
+      * { box-sizing: border-box; }
       body {
         margin: 0;
         font-family: Arial, sans-serif;
@@ -83,67 +82,45 @@ const produtos = [
         color: var(--text);
         line-height: 1.6;
       }
-
       .container {
         max-width: 1100px;
         margin: 0 auto;
         padding: 24px;
       }
-
       .hero {
         text-align: center;
         padding: 40px 20px 24px;
       }
-
       .hero h1 {
         font-size: 2.3rem;
         margin-bottom: 12px;
       }
-
       .hero p {
         max-width: 760px;
         margin: 0 auto;
         color: var(--muted);
       }
-
-      .quick-list,
-      .product-card,
-      .info-box,
-      .faq-item {
+      .quick-list, .product-card, .info-box, .faq-item {
         background: var(--card);
         border: 1px solid var(--border);
         border-radius: 16px;
       }
-
       .quick-list {
         padding: 20px;
         margin: 24px 0 36px;
       }
-
-      .quick-list h2 {
-        margin-top: 0;
-      }
-
-      .quick-list ol {
-        margin: 0;
-        padding-left: 20px;
-      }
-
-      .quick-list li {
-        margin: 10px 0;
-      }
-
+      .quick-list h2 { margin-top: 0; }
+      .quick-list ol { margin: 0; padding-left: 20px; }
+      .quick-list li { margin: 10px 0; }
       .quick-list a {
         color: var(--text);
         text-decoration: none;
         font-weight: bold;
       }
-
       .product-card {
         padding: 24px;
         margin: 28px 0;
       }
-
       .product-top {
         display: flex;
         gap: 12px;
@@ -151,7 +128,6 @@ const produtos = [
         margin-bottom: 18px;
         flex-wrap: wrap;
       }
-
       .rank {
         width: 38px;
         height: 38px;
@@ -162,7 +138,6 @@ const produtos = [
         font-weight: bold;
         color: var(--primary-dark);
       }
-
       .badge {
         background: var(--highlight);
         color: var(--primary-dark);
@@ -171,29 +146,24 @@ const produtos = [
         font-size: 0.9rem;
         font-weight: bold;
       }
-
       .product-grid {
         display: grid;
         grid-template-columns: 260px 1fr;
         gap: 24px;
       }
-
       .product-grid img {
         width: 100%;
         border-radius: 12px;
       }
-
       .product-title {
         font-size: 1.5rem;
         margin: 0 0 8px;
       }
-
       .product-subtitle {
         color: var(--muted);
         font-weight: bold;
         margin-bottom: 12px;
       }
-
       .btn {
         display: inline-block;
         background: var(--primary);
@@ -204,56 +174,25 @@ const produtos = [
         border-radius: 10px;
         margin-top: 12px;
       }
-
-      .btn:hover {
-        background: var(--primary-dark);
-      }
-
+      .btn:hover { background: var(--primary-dark); }
       .pros-cons {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
         margin-top: 18px;
       }
-
-      .info-box {
-        padding: 18px;
-      }
-
-      .info-box h3 {
-        margin-top: 0;
-      }
-
-      .section {
-        margin: 42px 0;
-      }
-
-      .section h2 {
-        margin-bottom: 12px;
-      }
-
-      .faq-list {
-        display: grid;
-        gap: 14px;
-      }
-
-      .faq-item {
-        padding: 18px;
-      }
-
+      .info-box { padding: 18px; }
+      .info-box h3 { margin-top: 0; }
       footer {
         text-align: center;
         color: var(--muted);
         font-size: 0.9rem;
         padding: 32px 0 16px;
       }
-
       @media (max-width: 768px) {
-        .product-grid,
-        .pros-cons {
+        .product-grid, .pros-cons {
           grid-template-columns: 1fr;
         }
-
         .hero h1 {
           font-size: 1.8rem;
         }
@@ -264,11 +203,11 @@ const produtos = [
   <body>
     <div class="container">
       <section class="hero">
-        <h1>As 5 Melhores Furadeiras e Parafusadeiras em 2026</h1>
+        <h1>As 3 Melhores Creatinas em 2026</h1>
         <p>
-          Se você quer comprar uma furadeira e parafusadeira sem errar, este comparativo
-          reúne opções populares para uso doméstico, pequenos reparos e tarefas do dia a dia.
-          Veja os modelos que mais se destacam em custo-benefício, praticidade e confiança.
+          Se você quer escolher uma creatina de qualidade sem perder tempo,
+          este comparativo reúne as melhores opções disponíveis atualmente,
+          focando em pureza, custo-benefício e resultados reais.
         </p>
       </section>
 
@@ -281,15 +220,6 @@ const produtos = [
             </li>
           ))}
         </ol>
-      </section>
-
-      <section class="section">
-        <h2>Qual é a melhor furadeira e parafusadeira?</h2>
-        <p>
-          A <strong>Bosch</strong> leva nossa escolha principal por reunir boa reputação,
-          versatilidade e ótimo equilíbrio para quem quer uma ferramenta útil em casa sem
-          complicação. Para a maioria das pessoas, ela entrega o melhor conjunto geral.
-        </p>
       </section>
 
       {produtos.map((produto) => (
@@ -334,44 +264,6 @@ const produtos = [
           </div>
         </article>
       ))}
-
-      <section class="section">
-        <h2>Como escolher a melhor opção</h2>
-        <p>
-          Antes de comprar, vale observar o tipo de uso que você pretende fazer. Para tarefas
-          simples em casa, modelos com bom custo-benefício costumam ser suficientes. Para uso
-          mais frequente, vale priorizar conforto, reputação da marca e consistência.
-        </p>
-      </section>
-
-      <section class="section">
-        <h2>Perguntas frequentes</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <h3>Vale a pena comprar furadeira e parafusadeira 2 em 1?</h3>
-            <p>
-              Sim, para uso doméstico essa combinação costuma ser muito prática e resolve a maior
-              parte das tarefas comuns.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>Qual marca costuma ser mais confiável?</h3>
-            <p>
-              Marcas conhecidas como Bosch e Black+Decker costumam transmitir mais segurança para
-              quem busca algo durável e com boa aceitação do mercado.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>Uma opção barata já resolve?</h3>
-            <p>
-              Em muitos casos, sim. Para uso leve e ocasional, um modelo de entrada pode atender
-              muito bem sem exigir investimento alto.
-            </p>
-          </div>
-        </div>
-      </section>
 
       <footer>
         Como associado da Amazon, podemos receber comissão por compras qualificadas.
