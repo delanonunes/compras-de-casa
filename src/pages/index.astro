@@ -1,0 +1,34 @@
+---
+const produto = {
+  nome: "Furadeira e Parafusadeira Bosch",
+  imagem: "https://m.media-amazon.com/images/I/61XU95EJ-NL._AC_SX679_.jpg",
+  link: "https://www.amazon.com.br/dp/B07CV3SDPY?tag=comprasdecasa02-20"
+};
+---
+
+<h1>Melhores Produtos para Casa 🏠</h1>
+
+<p>Selecionamos os melhores produtos com ótimo custo-benefício.</p>
+
+<div style="max-width:400px;border:1px solid #ccc;padding:20px;border-radius:10px">
+  
+  <a href={produto.link} target="_blank" rel="nofollow sponsored">
+    <img src={produto.imagem} alt={produto.nome} style="width:100%" />
+  </a>
+
+  <h2>
+    <a href={produto.link} target="_blank" rel="nofollow sponsored">
+      {produto.nome}
+    </a>
+  </h2>
+
+  <a 
+    href={produto.link} 
+    target="_blank" 
+    rel="nofollow sponsored"
+    style="display:inline-block;padding:10px 15px;background:green;color:white;border-radius:5px;text-decoration:none"
+  >
+    Ver preço na Amazon
+  </a>
+
+</div>
